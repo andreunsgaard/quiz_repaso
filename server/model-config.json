@@ -13,6 +13,9 @@
       "./mixins"
     ]
   },
+  "Email": {
+    "dataSource": "emailDs"
+  },
   "User": {
     "dataSource": "db"
   },
@@ -31,5 +34,17 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Quiz": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Comment": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Usuario": {
+    "dataSource": "db",
+    "public": true
   }
 }
