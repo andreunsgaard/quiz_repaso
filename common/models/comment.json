@@ -16,7 +16,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "quiz": {
+      "type": "belongsTo",
+      "model": "Quiz",
+      "foreignKey": ""
+    },
+    "userId": {
+      "type": "belongsTo",
+      "model": "Usuario",
+      "foreignKey": "userId"
+    }
+  },
   "acls": [],
   "methods": {}
 }
