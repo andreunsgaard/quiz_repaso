@@ -21,6 +21,11 @@
       "type": "hasMany",
       "model": "Comment",
       "foreignKey": "userId"
+    },
+    "quizzes": {
+      "type": "hasMany",
+      "model": "Quiz",
+      "foreignKey": "userId"
     }
   },
   "acls": [

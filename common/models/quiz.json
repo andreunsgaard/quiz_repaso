@@ -22,6 +22,11 @@
       "type": "hasMany",
       "model": "Comment",
       "foreignKey": ""
+    },
+    "userId": {
+      "type": "belongsTo",
+      "model": "Usuario",
+      "foreignKey": "userId"
     }
   },
   "acls": [
@@ -38,15 +43,22 @@
       "permission": "ALLOW"
     },
     {
-      "accessType": "WRITE",
+      "accessType": "*",
       "principalType": "ROLE",
       "principalId": "admin",
       "permission": "ALLOW"
     },
     {
-      "accessType": "*",
+      "accessType": "EXECUTE",
       "principalType": "ROLE",
-      "principalId": "admin",
+      "principalId": "$authenticated",
+      "permission": "ALLOW",
+      "property": "create"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$owner",
       "permission": "ALLOW"
     }
   ],
