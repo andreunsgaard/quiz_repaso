@@ -1,0 +1,6 @@
+{
+  "datasource": {
+    "name": "datasource",
+    "connector": "memory"
+  }
+}

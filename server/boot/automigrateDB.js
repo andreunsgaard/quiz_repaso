@@ -45,6 +45,13 @@ module.exports = function(app) {
                 });
               });
             });
+            app.loadFixtures()
+              .then(function() {
+                console.log('Fixtures loaded!');
+              })
+              .catch(function(err) {
+                console.log('Errors:', err);
+              });
           }
         });
       });

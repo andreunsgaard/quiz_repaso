@@ -1,0 +1,72 @@
+Usuario:
+  creadorPreguntas:
+    nombre: Creador
+    apellidos: Preguntas
+    email: creadorPreguntas@iesdosmares.com
+    password: alumno
+    emailVerified: true
+  creadorComentarios:
+    nombre: Creador
+    apellidos: Comentarios
+    email: creadorComentarios@iesdosmares.com
+    password: alumno
+    emailVerified: true
+  concursante:
+    nombre: Concursante
+    apellidos: Lo sabe todo
+    email: concursante@iesdosmares.com
+    password: alumno
+    emailVerified: true
+
+Quiz:
+  pregunta1:
+    pregunta: Pregunta 1
+    respuesta: Respuesta 1
+    userId: @creadorPreguntas
+  pregunta2:
+    pregunta: Pregunta 2
+    respuesta: Respuesta 2
+    userId: @creadorPreguntas
+  pregunta3:
+    pregunta: Pregunta 3
+    respuesta: Respuesta 3
+    userId: @creadorPreguntas
+  pregunta4:
+    pregunta: Pregunta 4
+    respuesta: Respuesta 4
+    userId: @creadorPreguntas
+  pregunta5:
+    pregunta: Pregunta 5
+    respuesta: Respuesta 5
+    userId: @creadorPreguntas
+  pregunta6:
+    pregunta: Pregunta 6
+    respuesta: Respuesta 6
+    userId: @creadorPreguntas
+
+Comment:
+  comentario1:
+    texto: texto comentario 1
+    publicado: true
+    quizId: @pregunta1
+    userId: @creadorComentarios
+  comentario2:
+    texto: texto comentario 2
+    publicado: true
+    quizId: @pregunta1
+    userId: @creadorComentarios
+  comentario3:
+    texto: texto comentario 3
+    publicado: false
+    quizId: @pregunta1
+    userId: @creadorComentarios
+  comentario4:
+    texto: texto comentario 4
+    publicado: true
+    quizId: @pregunta2
+    userId: @creadorComentarios
+  comentario5:
+    texto: texto comentario 5
+    publicado: true
+    quizId: @pregunta2
+    userId: @creadorComentarios
