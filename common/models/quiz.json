@@ -56,6 +56,13 @@
       "property": "create"
     },
     {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW",
+      "property": "__create__comments"
+    },
+    {
       "accessType": "WRITE",
       "principalType": "ROLE",
       "principalId": "$owner",
