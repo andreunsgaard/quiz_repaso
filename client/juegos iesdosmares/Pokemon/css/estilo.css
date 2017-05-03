@@ -1,0 +1,66 @@
+body{
+	background-color: lightblue;
+}
+div{
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+div .marcador{
+	padding-top: 10px;
+	background-color: #A3F0D7;
+	border: 3px solid purple;
+	height: 125px;
+}
+#tiempo{
+	padding-top: 0;
+	font-size: 6em;
+	font-weight: bold;
+}
+
+#inicio{
+	margin-top: 5px;
+	background-color: red;
+	color:white;
+	font-weight: bold;
+	border: 5px solid lightgrey;
+	border-radius: 100%;
+	padding: 20px 15px;
+	box-shadow: 1px 2px black 
+}
+.tablero{
+	padding-top: 20px;
+	width: 70%;
+	margin: auto;
+}
+#mensaje{
+	padding-top: 20px;
+}
+img{
+	width: 100%;
+	border:2px solid lightgrey;
+}
+#popup{
+	position: absolute;
+	top: 400px;
+	left: 400px;
+}
+.pie{
+	font-weight: bold;
+	margin-top: 25px;
+}
+.image_pie{
+	width: 45%;
+	margin-bottom: 15px;
+	border:none;
+}
+.tabla{
+	background-color: lightcyan;
+}
+.image_muestra{
+	width: 15%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border:none;
+}

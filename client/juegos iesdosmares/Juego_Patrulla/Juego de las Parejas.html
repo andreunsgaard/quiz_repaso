@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" type="image/x-icon" href="images/Favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<title>Patrulla Canina - Encuentra las Parejas (IES Dos Mares 2017)</title>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script language="javascript" src="js/juegodelasparejas.js"></script>
+		
+	</head>
+	<body>
+		<header>
+			<h1>Patrulla Canina</h1> 
+			<span>Aciertos:<span id="aciertos">0</span>
+			Fallos:<span id="fallos">0</span>
+			Tiempo:<span id="tiempo">0</span><br>
+			Jugador:<span id="nombr"> ..... </span>
+			- Puntos:<span id="puntos">0</span></span><br>
+			<button id="boton" type="button" >COMENZAR A JUGAR</button>
+			<!--<a href="ranking.php"><button id="botonestadisticas" type="button" >MOSTRAR ESTADISTICAS</button></a>-->
+		</header>	
+		
+		<div id="popup" style="display: none;">
+			<div class="content-popup">
+				<div>
+				  <!-- <h2>Introduce un nombre:</h2>
+				   Nombre: <input type="text" id="nombre" size="30" maxlength="20" placeholder="Introduce tu nombre" name="nombre">-->
+				   <a href="#" id="close"><button id="close" type="button" >COMENZAR A JUGAR</button></a><br><br>
+				   <form action="">
+					Selecciona una dificultad:<br><br>
+					  <input type="radio" name="nivel" value="40"> Avanzado (40")<br>
+					  <input type="radio" name="nivel" value="50" checked> Intermedio (50")<br>
+					  <input type="radio" name="nivel" value="60"> Principiante (60")
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<div id="contenedor" >
+			<p draggable="false">
+				<img id="imagen0" src="images/carta.jpg" draggable="false"/>
+				<img id="imagen1" src="images/carta.jpg" draggable="false"/>
+				<img id="imagen2" src="images/carta.jpg" draggable="false"/>
+				<img id="imagen3" src="images/carta.jpg" draggable="false"/>
+				<img id="imagen4" src="images/carta.jpg" draggable="false"/>
+				<img id="imagen5" src="images/carta.jpg" draggable="false"/>
+				<img id="imagen6" src="images/carta.jpg" draggable="false"/>
+				<img id="imagen7" src="images/carta.jpg" draggable="false"/>
+				<img id="imagen8" src="images/carta.jpg" draggable="false"/>
+				<img id="imagen9" src="images/carta.jpg" draggable="false"/>
+			</p>
+			<p>
+				<img id="imagen10" src="images/carta.jpg" draggable="false"/>
+				<img id="imagen11" src="images/carta.jpg" draggable="false"/>
+				<img id="imagen12" src="images/carta.jpg" draggable="false"/>
+				<img id="imagen13" src="images/carta.jpg" draggable="false"/>
+				<img id="imagen14" src="images/carta.jpg" draggable="false"/>
+				<img id="imagen15" src="images/carta.jpg" draggable="false"/>
+				<img id="imagen16" src="images/carta.jpg" draggable="false"/>
+				<img id="imagen17" src="images/carta.jpg" draggable="false"/>
+				<img id="imagen18" src="images/carta.jpg" draggable="false"/>
+				<img id="imagen19" src="images/carta.jpg" draggable="false"/>
+				
+			</p>
+		</div>
+		<p><img id="logo" src="images/logo.png" style="width:90px; height:50px;"/> Copyright Carlos López Ríos 2ºDAW I.E.S DOS MARES <img id="logo" src="images/logo.png" style="width:90px; height:50px;"/></p>
+	</body>
+</html>

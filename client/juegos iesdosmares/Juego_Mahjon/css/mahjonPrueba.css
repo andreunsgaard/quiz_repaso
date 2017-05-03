@@ -1,0 +1,213 @@
+@font-face{
+   font-family: 'GameOver';
+   src: url('../fonts/Super Plumber Brothers.ttf');
+}
+
+img {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}
+
+body {
+	background-image: url(../imagenes/maxresdefault.jpg);
+	background-repeat: no-repeat;
+}
+
+#cuentaAtras {
+	position: absolute;	
+	top: 7px;
+	left: 950px;
+	color: white;
+	font-size: 1.8em;
+	font-family: 'GameOver';
+	text-align: right;
+}
+
+#intro {
+	position: absolute;
+	top: 300px;
+	left: 440px;
+	font-size: 3em;
+	font-family: 'GameOver';
+	color: gold;
+}
+
+#formulario {
+	position: absolute;
+	left: 330px;
+	top: 10px;
+	color: white;
+	display: inline;
+}
+
+#contadorIntentos {
+	position: absolute;
+	top: 15px;
+	left: 650px;
+	color: white;
+	font-family: 'GameOver';
+	font-size: 1.5em;
+	text-align: right;
+}
+
+.radio2 {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	margin-right: 15px;
+	
+}
+
+.radioButton {
+	display: inline-block;
+}
+
+#jugar {
+	position: absolute;
+	top: 7px;
+	left: 247px;
+	width: 55px;
+	height: 55px;
+	background-image: url(../imagenes/caja.jpg);
+}
+
+#iniciar {
+	margin: 0 auto;
+}
+
+#contadores {
+	width: 20%;
+}
+
+#juego {
+	position: absolute;
+	width: 570px;
+	top: 150px;
+	left: 410px;
+}
+/*
+#contenedor {
+	margin: 30px 0 auto;
+	float: left;
+}
+*/
+#enlace {
+	position: relative;
+	top: 312px;
+	left: 325px;
+	width: 20px;
+	height: 20px;
+}
+
+#enlace2 {
+	position: relative;
+	top: 315px;
+	left: 300px;
+	width: 70px;
+	height: 30px;
+	font-size: 1.4em;
+	border-radius: 10px;
+	border-color: gold;
+	font-family: 'GameOver';
+}
+
+#flechaEnlace {
+	position: relative;
+	width: 30px;
+	height: 30px;
+}
+
+/*
+.monedas {
+	transition: 1s;
+}*/
+
+.monedas {
+	float: left;
+	/*transform: rotateY(360deg);*/
+}
+
+#capaResultado {
+	position: absolute;
+	top: 210px;
+	width: 35%;
+	margin: auto;
+	height: 350px;
+	margin-left: 30%;
+	background-color: rgba(255,255,255,0.8);	 
+	border-radius: 30px;
+}
+
+#imagenCastillo {
+	position: absolute;
+	top: 15px;
+	left: 178px;
+	width: 100px;
+	opacity: 0.8;
+}
+
+#score {
+	position: absolute;
+	text-align: center;
+	color: black;
+	font-size: 2.5em;
+	top: 150px;	
+	left: 60px;	
+	width: 350px;
+	height: 50px;
+	border-radius: 50px;
+	border: 1px solid grey; 
+}
+
+#estrellas {
+	position: absolute;
+	top: 205px;	
+	left: 70px;	
+	width: 350px;
+	height: 50px;
+}
+
+.estrellita {
+	width: 30%;	
+}
+
+#monedilla {
+	position: absolute;
+	top: 19px;
+	left: 624px;
+	width: 20px;
+	height: 23px;
+	background-image: url(../imagenes/monedilla.jpg);
+	background-repeat: no-repeat;
+}
+
+#barco {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	z-index: 1;
+	top: 130px;
+	background-image: url("../imagenes/movimiento.gif");
+	background-repeat: no-repeat;
+	animation-name: luigi;
+	animation-duration: 80s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+	-webkit-animation-name: luigi;
+	-webkit-animation-duration: 80s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes luigi {
+	 0% {left:-180px; transform: translateX(0px);}
+    100% {left:650px; transform: translateX(-90px);}
+}
+/* Standard syntax */
+@keyframes luigi {
+	 0% {left:-180px; transform: translateX(0px);}
+    100% {left:650px; transform: translateX(-90px);}
+}

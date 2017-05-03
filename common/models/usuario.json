@@ -26,6 +26,12 @@
       "type": "hasMany",
       "model": "Quiz",
       "foreignKey": "userId"
+    },
+    "juegos": {
+      "type": "hasMany",
+      "model": "Juego",
+      "foreignKey": "",
+      "through": "Puntuacion"
     }
   },
   "acls": [

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/css.css">
+		<script src="js/jquery-1.11.1.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<title>League of Legends - Encuentra las Parejas (IES Dos Mares 2017)</title>
+		<link rel="icon" type="image/png" href="favicon.png">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<script language="javascript" src="js/jquery.js">
+		</script>
+	</head>
+
+	<body style="user-select:none;">
+		<p><img id="logo" src="images/Logo_IESDosMares.png" style="width:90px; height:50px;"/> Copyright DAVID BLAZQUEZ GUIJARRO - IES DOS MARES <img id="logo" src="images/Logo_IESDosMares.png" style="width:90px; height:50px;"/></p>
+		<header>
+			<h2>League of Legends <small><div class="col-sx-12 text-center" id='contador'></div></small></h2>
+			<center><p><button type="button" style="color:black" onclick="comenzarJuego()">COMENZAR A JUGAR</button></p><center>
+
+
+			<fieldset data-role="controlgroup">
+
+		        <label for="principiante">Principiante  </label>
+		        <input type="radio" name="dificultad" id="principiante" value="61" >				
+
+				<label for="intermedio">Intermedio  </label>
+		        <input type="radio" name="dificultad" id="intermedio" value="51" checked>
+
+				<label for="avanzado">Avanzado  </label>
+		        <input type="radio" name="dificultad" id="avanzado" value="41" >
+
+	        </fieldset>
+
+
+		</header>
+
+	  	<div style="user-select:none;" class="container">
+
+		    <div class="row">
+		    			<div style="user-select:none;" class=" col-sx-12 text-center puntuacion">
+							</div>
+							<div class=" col-sx-12 text-center rango">
+							</div>
+						<div style="user-select:none;" class="col-xs-offset-1 col-xs-10 mostrar">
+							<img style="user-select:none;" draggable="false" id="imagen0"  class="carta top" onclick="comprobarCarta(0)"/>
+							<img style="user-select:none;" draggable="false" id="imagen1" class="carta top" onclick="comprobarCarta(1)"/>
+							<img style="user-select:none;" draggable="false" id="imagen2" class="carta top" onclick="comprobarCarta(2)"/>
+							<img style="user-select:none;" draggable="false" id="imagen3" class="carta top" onclick="comprobarCarta(3)"/>
+							<img style="user-select:none;" draggable="false" id="imagen4" class="carta top" onclick="comprobarCarta(4)"/>
+							<img style="user-select:none;" draggable="false" id="imagen5" class="carta top" onclick="comprobarCarta(5)"/>
+							<img  style="user-select:none;" draggable="false" id="imagen6" class="carta top" onclick="comprobarCarta(6)"/>
+							<img style="user-select:none;" draggable="false" id="imagen7" class="carta top" onclick="comprobarCarta(7)"/>
+							<img style="user-select:none;" draggable="false" id="imagen8" class="carta top" onclick="comprobarCarta(8)"/>
+							<img style="user-select:none;" draggable="false" id="imagen9" class="carta top" onclick="comprobarCarta(9)"/>
+							<img style="user-select:none;" draggable="false" id="imagen10" class="carta top" onclick="comprobarCarta(10)"/>
+							<img style="user-select:none;" draggable="false" id="imagen11" class="carta top" onclick="comprobarCarta(11)"/>
+							<img style="user-select:none;" draggable="false" id="imagen12" class="carta top" onclick="comprobarCarta(12)"/>
+							<img style="user-select:none;" draggable="false" id="imagen13" class="carta top" onclick="comprobarCarta(13)"/>
+							<img style="user-select:none;" draggable="false" id="imagen14" class="carta top" onclick="comprobarCarta(14)"/>
+							<img style="user-select:none;" draggable="false" id="imagen15" class="carta top" onclick="comprobarCarta(15)"/>
+							<img style="user-select:none;" draggable="false" id="imagen16" class="carta top" onclick="comprobarCarta(16)"/>
+							<img style="user-select:none;" draggable="false" id="imagen17" class="carta top" onclick="comprobarCarta(17)"/>
+							<img  draggable="false" id="imagen18" class="carta top" onclick="comprobarCarta(18)"/>
+							<img draggable="false" id="imagen19" class="carta top" onclick="comprobarCarta(19)"/>
+						</div>
+			</div>
+			
+			<div class="col-sx-12 text-center reiniciar"><button type="button" style="color:black" onclick="reiniciar()">Volver a jugar</button>
+			</div>
+
+<form action="enviar.php" method="post" id="formu">
+  <div class="input-group">
+    <span class="input-group-addon"></span>
+    <input id="email" type="text" class="form-control" name="nombre" placeholder="Nombre" required>
+  </div>
+  <div class="input-group">
+    <span class="input-group-addon"></span>
+    <input id="puntos"  class="form-control" name="puntuacion" readonly>
+      
+  </div>
+  <button type="submit" class="btn btn-success btn-lg">Enviar</button>
+  
+</form>
+
+
+		</div>
+		
+	</body>
+
+</html>

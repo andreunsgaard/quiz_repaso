@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Juego Mahjon</title>
+		<meta charset="utf-8">
+        <script src="js/jquery-3.1.1.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+		<script type="text/javascript" src="js/mahjonPrueba.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/mahjonPrueba.css">
+	</head>
+	<body>
+		<div id="body">
+
+				<div id="intro">
+					<p>Clica en la caja interrogante.</p>
+				</div>
+
+				<input type="button" id="jugar">
+						<form id="formulario">
+						  <input type="radio" name="gender"  id="avanzado" class="radioButton" value="avanzado"><img src="imagenes/browser.png" class="radio2">
+						  <input type="radio" name="gender"  id="intermedio" class="radioButton" checked="checked" value="intermedio"> <img src="imagenes/mario.png" class="radio2">
+						  <input type="radio" name="gender" id="principiante" class="radioButton" value="principiante"> <img src="imagenes/bebe.png" class="radio2">
+						</form>
+				<div id="iniciar">
+					<div id="contadores">
+						<a href="javascript:location.reload()" id="enlace"></a>
+						<div id="cuentaAtras"></div>
+						<div id="monedilla"></div><div id="contadorIntentos"></div>
+					</div>
+
+					<div id="juego">
+						<div class="monedas"><img src="imagenes/0.jpg" id="1a" alt="imagen" onclick="clickar('1')"></div>
+						<div class="monedas"><img src="imagenes/0.jpg" id="2a" alt="imagen" onclick="clickar('2')"></div>
+						<div class="monedas"><img src="imagenes/0.jpg" id="3a" alt="imagen" onclick="clickar('3')"></div>
+						<div class="monedas"><img src="imagenes/0.jpg" id="4a" alt="imagen" onclick="clickar('4')"></div>
+						<div class="monedas"><img src="imagenes/0.jpg" id="5a" alt="imagen" onclick="clickar('5')"></div>
+					
+						<div class="monedas"><img src="imagenes/0.jpg" id="6a" alt="imagen" onclick="clickar('6')"></div>
+						<div class="monedas"><img src="imagenes/0.jpg" id="7a" alt="imagen" onclick="clickar('7')"></div>
+						<div class="monedas"><img src="imagenes/0.jpg" id="8a" alt="imagen" onclick="clickar('8')"></div>
+						<div class="monedas"><img src="imagenes/0.jpg" id="9a" alt="imagen" onclick="clickar('9')"></div>
+						<div class="monedas"><img src="imagenes/0.jpg" id="10a" alt="imagen" onclick="clickar('10')"></div>
+					
+						<div class="monedas"><img src="imagenes/0.jpg" id="11a" alt="imagen" onclick="clickar('11')"></div>
+						<div class="monedas"><img src="imagenes/0.jpg" id="12a" alt="imagen" onclick="clickar('12')"></div>
+						<div class="monedas"><img src="imagenes/0.jpg" id="13a" alt="imagen" onclick="clickar('13')"></div>
+						<div class="monedas"><img src="imagenes/0.jpg" id="14a" alt="imagen" onclick="clickar('14')"></div>
+						<div class="monedas"><img src="imagenes/0.jpg" id="15a" alt="imagen" onclick="clickar('15')"></div>
+					
+						<div class="monedas"><img src="imagenes/0.jpg" id="16a" alt="imagen" onclick="clickar('16')"></div>
+						<div class="monedas"><img src="imagenes/0.jpg" id="17a" alt="imagen" onclick="clickar('17')"></div>
+						<div class="monedas"><img src="imagenes/0.jpg" id="18a" alt="imagen" onclick="clickar('18')"></div>
+						<div class="monedas"><img src="imagenes/0.jpg" id="19a" alt="imagen" onclick="clickar('19')"></div>
+						<div class="monedas"><img src="imagenes/0.jpg" id="20a" alt="imagen" onclick="clickar('20')"></div>
+					</div>
+				</div>
+
+					<div id="capaResultado">
+						<div id="imagenCastillo"><img src="imagenes/celebracion.gif"></div>
+						<div id="score"></div>
+						<div id="estrellas">
+							<img src="imagenes/estrella.png" class="estrellita" id="estrella1">
+							<img src="imagenes/estrella.png" class="estrellita" id="estrella2">
+							<img src="imagenes/estrella.png" class="estrellita" id="estrella3">
+						</div>
+						<input type="button" id="enlace2" value="Guardar">
+						<a href="javascript:location.reload()" id="enlace"><img src="imagenes/flecha.png" id="flechaEnlace"></a>
+					</div>
+		</div>
+				
+	</body>
+</html>

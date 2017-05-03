@@ -46,5 +46,13 @@
   "Usuario": {
     "dataSource": "db",
     "public": true
+  },
+  "Juego": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Puntuacion": {
+    "dataSource": "db",
+    "public": true
   }
 }

@@ -1,0 +1,14 @@
+El index.html es el juego de las cartas, al terminar llama a indatos.php en una
+nueva ventana. Este recoge el nombre con un formulario y recoge los puntos por 
+una petición get y los envia a regpuntos, para hacer el insert y si sale bién muestra
+el listado de usuarios ya registrados en orden por puntos descendente destacando
+este última inserción.
+En mostrar, se muestra una busqueda de todos los grupos, que por html se actualiza 
+cada segundo. 
+La base de datos mostrada esta, vacia, en clasificación.sql.
+
+Para el caso de utilizarlo con la creada por alberto, en la carpeta "php para datos bd
+alberto" estan los archivos php necesarios para reemplazar a estos y configurados con
+sus datos. 
+
+Como mucno solo hay que el hostname en cada caso, ya que estan configuradas con localhost.
