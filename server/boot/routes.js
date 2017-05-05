@@ -9,7 +9,7 @@ module.exports = function(app) {
   var Usuario = app.models.Usuario;
 
   //login page
-  app.get('/', function(req, res) {
+  app.get('/user', function(req, res) {
     var credentials = dsConfig.emailDs.transports[0].auth;
     res.render('login', {
       email: credentials.user,
@@ -32,7 +32,7 @@ module.exports = function(app) {
         res.render('response', {
           title: 'Login failed',
           content: err,
-          redirectTo: '/',
+          redirectTo: '/user',
           redirectToLinkText: 'Try again'
         });
         return;
