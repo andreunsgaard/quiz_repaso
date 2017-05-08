@@ -1,14 +1,14 @@
 <h1>Todo list</h1>
 <hr>
-<form name="todoForm" novalidate ng-submit="addTodo()">
+<form name="todoForm" novalidate ng-submit="addPuntuacion()">
   <div class="form-group"
-      ng-class="{'has-error': todoForm.content.$invalid
-        && todoForm.content.$dirty}">
-    <input type="text" class="form-control focus" name="content"
-        placeholder="Content" autocomplete="off" required
-        ng-model="newTodo.content">
+      ng-class="{'has-error': todoForm.puntos.$invalid
+        && todoForm.puntos.$dirty}">
+    <input type="number" class="form-control focus" name="puntos"
+        placeholder="Puntuacion" autocomplete="off" required
+        ng-model="newPuntuacion.puntos">
     <span class="has-error control-label" ng-show="
-        todoForm.content.$invalid && todoForm.content.$dirty">
+        todoForm.puntos.$invalid && todoForm.puntos.$dirty">
       Content is required.
     </span>
   </div>
@@ -16,7 +16,7 @@
 </form>
 <hr>
 <div class="list-group">
-  <a class="list-group-item" ng-repeat="todo in todos">{{todo.content}}&nbsp;
+  <a class="list-group-item" ng-repeat="todo in todos">{{todo.usuarioId}} - {{todo.puntos}}&nbsp;
     <i class="glyphicon glyphicon-remove pull-right"
-        ng-click="removeTodo(todo)"></i></a>
+        ng-click="removePuntuacion(todo)"></i></a>
 </div>

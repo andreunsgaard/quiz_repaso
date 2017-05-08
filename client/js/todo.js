@@ -24,7 +24,7 @@ angular
         .$promise
         .then(function(todo) {
           $scope.newPuntuacion = '';
-          $scope.todoForm.content.$setPristine();
+          $scope.todoForm.puntos.$setPristine();
           $('.focus').focus();
           getPuntuacions();
         });
